@@ -1,7 +1,7 @@
 package algorithm
 
 // 冒泡排序（排序10000个随机整数，用时约145ms）
-func bubbleSort(nums []int) {
+func BubbleSort(nums []int) {
 	for i := 0; i < len(nums); i++ {
 		for j := 1; j < len(nums) - i; j++ {
 			if nums[j] < nums[j - 1] {
@@ -12,7 +12,7 @@ func bubbleSort(nums []int) {
 }
 
 //选择排序（排序10000个随机整数，用时约45ms）
-func selectSort(nums []int) {
+func SelectSort(nums []int) {
 	length := len(nums)
 	for i := 0; i < length; i++ {
 		maxIndex := 0
@@ -27,7 +27,7 @@ func selectSort(nums []int) {
 }
 
 //快速排序（排序10000个随机整数，用时约0.9ms）
-func quickSort(nums []int) {
+func QuickSort(nums []int) {
 	recursionSort(nums, 0, len(nums) - 1)
 }
 
@@ -61,7 +61,7 @@ func partition(nums []int, left int, right int) int {
 }
 
 //插入排序（排序10000个整数，用时约30ms）
-func insertSort(nums []int) {
+func InsertSort(nums []int) {
 	for i := 1; i < len(nums); i++ {
 		if nums[i] < nums[i - 1] {
 			j := i - 1
